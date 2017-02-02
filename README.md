@@ -14,12 +14,8 @@ Market
 
 Developed By
 ============
-* [@huanghong](http://weibo.com/BBC6BAE9) - <chinahuanghong@gmail.com>
+* [@huanghong](http://weibo.com/u/3216118734?refer_flag=1001030101_) - <chinahuanghong@gmail.com>
 * [@majiaojiao](http://weibo.com/u/2300354152?refer_flag=1001030102_&is_all=1)
-
-Pull Requests
-===
-I will gladly accept pull requests for fixes and feature enhancements but please do them in the develop branch.
 
 
 License
@@ -27,7 +23,6 @@ License
 
 
    Copyright 2017 huanghong
-   Copyright 2017 majiaojiao 
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.

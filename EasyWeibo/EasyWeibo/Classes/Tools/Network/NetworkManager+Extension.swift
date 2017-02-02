@@ -133,7 +133,7 @@ extension NetworkManager {
             
             //*******************************************************
             //警告⚠️[这部分代码呢，是因为目前接口无法获取token，先用这段代码完成逻辑，接口通了之后务必删除这段代码]
-            self.userAccount.access_token = "2.00o5VeVDIZWtGDf60277508fDsjh6E"
+            self.userAccount.access_token = "2.00o5VeVDCqH4wC4558b2130blgBTyD"
             self.userAccount.uid = "3216118734"
             self.userAccount.expire_in = 111199
             //*******************************************************

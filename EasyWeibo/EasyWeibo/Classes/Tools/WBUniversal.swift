@@ -15,8 +15,8 @@ import Foundation
 //MARK: 全局通知定义
 //定义全局App信息
 
-let WBAppKey = "2850289738"
-let WBAppSecret = "bf21cf4462eb5b47c88191a50da26b07"
+let WBAppKey = "2694804830"
+let WBAppSecret = "2fee1f2bf5be6329afaa4def4f5af456"
 let WBRedirectURI = "http://www.baidu.com"
 
 /// 用户需要登录通知

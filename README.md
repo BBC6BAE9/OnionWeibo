@@ -9,7 +9,7 @@ It lets you browse all categories of Dribbble, popular ,everyone and debuts.
 
 Market
 ============
-* [iTunes](https://play.google.com/store/apps/details?id=com.refactech.driibo)
+* [iTunes](https://www.apple.com/itunes/)
 
 
 Developed By

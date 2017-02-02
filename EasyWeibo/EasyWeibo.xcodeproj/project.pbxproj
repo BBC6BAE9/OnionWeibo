@@ -44,6 +44,8 @@
 		04B50E961E31A36A006976E6 /* WBOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B50E951E31A36A006976E6 /* WBOAuthViewController.swift */; };
 		04B94A871E38579600028CC8 /* WBStatusPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B94A861E38579600028CC8 /* WBStatusPicture.swift */; };
 		04B94A891E38581600028CC8 /* WBStatusPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B94A881E38581600028CC8 /* WBStatusPictureView.swift */; };
+		04D2CBEA1E4310C900E8814E /* WBProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D2CBE91E4310C900E8814E /* WBProfileHeaderView.swift */; };
+		04D2CBEC1E43131D00E8814E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D2CBEB1E43131D00E8814E /* UIView+Extension.swift */; };
 		04DA9E9A1E28C26F00371714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA9E991E28C26F00371714 /* AppDelegate.swift */; };
 		04DA9EA41E28C26F00371714 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DA9EA21E28C26F00371714 /* LaunchScreen.storyboard */; };
 		04DA9EAF1E28C26F00371714 /* EasyWeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA9EAE1E28C26F00371714 /* EasyWeiboTests.swift */; };
@@ -127,6 +129,8 @@
 		04B50E951E31A36A006976E6 /* WBOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBOAuthViewController.swift; sourceTree = "<group>"; };
 		04B94A861E38579600028CC8 /* WBStatusPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusPicture.swift; sourceTree = "<group>"; };
 		04B94A881E38581600028CC8 /* WBStatusPictureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusPictureView.swift; sourceTree = "<group>"; };
+		04D2CBE91E4310C900E8814E /* WBProfileHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBProfileHeaderView.swift; sourceTree = "<group>"; };
+		04D2CBEB1E43131D00E8814E /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		04DA9E961E28C26F00371714 /* EasyWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DA9E991E28C26F00371714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04DA9EA31E28C26F00371714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -446,6 +450,7 @@
 			isa = PBXGroup;
 			children = (
 				04DA9EDD1E28C72E00371714 /* WBProfileViewController.swift */,
+				04D2CBE91E4310C900E8814E /* WBProfileHeaderView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -485,6 +490,7 @@
 		04DA9F061E28EFE000371714 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				04D2CBEB1E43131D00E8814E /* UIView+Extension.swift */,
 				04F6E1C71E354425000B0AEA /* UIImage+WebImage.swift */,
 				04F6E1C91E354439000B0AEA /* UIImage+Extensions.swift */,
 				04DA9F071E28EFE000371714 /* Bundle+Extensions.swift */,
@@ -738,6 +744,7 @@
 				04DA9EFC1E28E90400371714 /* NSString+CZBase64.m in Sources */,
 				049FAC531E3376580095FB1D /* WBNewFeatureView.swift in Sources */,
 				04DA9EDE1E28C72E00371714 /* WBProfileViewController.swift in Sources */,
+				04D2CBEA1E4310C900E8814E /* WBProfileHeaderView.swift in Sources */,
 				04F6E1C21E353540000B0AEA /* WBUser.swift in Sources */,
 				04DA9EDC1E28C72300371714 /* WBDiscoverViewController.swift in Sources */,
 				04DA9EFF1E28E90400371714 /* UIButton+CZAddition.m in Sources */,
@@ -763,6 +770,7 @@
 				04DA9EDA1E28C71500371714 /* WBMessageViewController.swift in Sources */,
 				04F6E1CA1E354439000B0AEA /* UIImage+Extensions.swift in Sources */,
 				04B50E961E31A36A006976E6 /* WBOAuthViewController.swift in Sources */,
+				04D2CBEC1E43131D00E8814E /* UIView+Extension.swift in Sources */,
 				0476F76B1E30A98700A5B73E /* NetworkManager+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -5,7 +5,7 @@ It lets you browse all categories of Dribbble, popular ,everyone and debuts.
 
 设计简约的第三方微博客户端Onion，提供了全面的浏览功能，让你随时随地发现新鲜事儿！
 
-![OnionWeibo](https://raw.github.com/BBC6BAE9/OnionWeibo/master/art/pic1.png)
+![OnionWeibo](https://raw.github.com/BBC6BAE9/OnionWeibo/master/art/pic1.jpeg)
 
 Market
 ============

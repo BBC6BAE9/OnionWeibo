@@ -1,0 +1,14 @@
+# platform :ios, '8.0'
+
+target 'EasyWeibo' do
+use_frameworks!
+
+pod "AFNetworking"
+pod "SDWebImage", "~> 4.0.0-beta2"
+pod "YYModel"
+pod "FMDB"
+pod "SVProgressHUD"
+pod "pop"
+pod "SnapKit"
+
+end

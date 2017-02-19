@@ -100,7 +100,7 @@ class WBMainViewController: UITabBarController {
         print("撰写微博")
         
         //实例化视图
-        let v = WBComposeTypeView.init(frame: UIScreen.main.bounds)
+        let v = WBComposeTypeView.composeTyperView()
         //显示视图
         v.show()
         

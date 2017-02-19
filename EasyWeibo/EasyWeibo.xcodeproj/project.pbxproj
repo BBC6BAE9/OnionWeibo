@@ -72,6 +72,7 @@
 		04F6E1C81E354425000B0AEA /* UIImage+WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6E1C71E354425000B0AEA /* UIImage+WebImage.swift */; };
 		04F6E1CA1E354439000B0AEA /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6E1C91E354439000B0AEA /* UIImage+Extensions.swift */; };
 		3E61ED7AB518E05741FE9987 /* Pods_EasyWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C40799F81E72E2608568AEF /* Pods_EasyWeibo.framework */; };
+		452477C41E592A65003FDFED /* WBComposeTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452477C31E592A65003FDFED /* WBComposeTypeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +179,7 @@
 		04F6E1C91E354439000B0AEA /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		2C40799F81E72E2608568AEF /* Pods_EasyWeibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyWeibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44EBDF1FBF380609FE40265F /* Pods-EasyWeibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyWeibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyWeibo/Pods-EasyWeibo.release.xcconfig"; sourceTree = "<group>"; };
+		452477C31E592A65003FDFED /* WBComposeTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBComposeTypeView.swift; sourceTree = "<group>"; };
 		58723FE9C8BF1832BABC6571 /* Pods-EasyWeibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyWeibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyWeibo/Pods-EasyWeibo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -305,6 +307,7 @@
 		04B50E861E31A2EE006976E6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				452477C11E592A32003FDFED /* Compose */,
 				04B50E871E31A2EE006976E6 /* main.json */,
 				0451C04B1E34813F0014BF0B /* MainController */,
 				0451C0501E3481B40014BF0B /* Test */,
@@ -514,6 +517,22 @@
 				44EBDF1FBF380609FE40265F /* Pods-EasyWeibo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		452477C11E592A32003FDFED /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				452477C21E592A32003FDFED /* ComposeType */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		452477C21E592A32003FDFED /* ComposeType */ = {
+			isa = PBXGroup;
+			children = (
+				452477C31E592A65003FDFED /* WBComposeTypeView.swift */,
+			);
+			path = ComposeType;
 			sourceTree = "<group>";
 		};
 		8BF016B2E57532AC0E7F1CEA /* Frameworks */ = {
@@ -757,6 +776,7 @@
 				048F15511E3CBCC70048D6DE /* BBRefreshView.swift in Sources */,
 				047FDBF71E351C0700E7E121 /* WBStatus.swift in Sources */,
 				043989AE1E3507450014B81D /* WBStatusCell.swift in Sources */,
+				452477C41E592A65003FDFED /* WBComposeTypeView.swift in Sources */,
 				047FDBFB1E351C2E00E7E121 /* WBStatusListViewModel.swift in Sources */,
 				04B94A891E38581600028CC8 /* WBStatusPictureView.swift in Sources */,
 				043635981E41A5E300F77F9A /* CZMeituanRefreshView.swift in Sources */,

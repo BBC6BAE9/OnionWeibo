@@ -94,7 +94,16 @@ class WBMainViewController: UITabBarController {
     //保护函数私有，保证KVC调用
     @objc private func composeStatus(){
         
+        
+        
+        //FIXME: -判断是否登陆
         print("撰写微博")
+        
+        //实例化视图
+        let v = WBComposeTypeView.init(frame: UIScreen.main.bounds)
+        //显示视图
+        v.show()
+        
         
     }
     

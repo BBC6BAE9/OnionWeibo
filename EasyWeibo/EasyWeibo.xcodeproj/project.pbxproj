@@ -74,6 +74,8 @@
 		3E61ED7AB518E05741FE9987 /* Pods_EasyWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C40799F81E72E2608568AEF /* Pods_EasyWeibo.framework */; };
 		452477C41E592A65003FDFED /* WBComposeTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452477C31E592A65003FDFED /* WBComposeTypeView.swift */; };
 		452477C61E592E3E003FDFED /* WBComposeTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 452477C51E592E3E003FDFED /* WBComposeTypeView.xib */; };
+		45E991C91E59374C00C35023 /* WBComposeTypeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E991C81E59374C00C35023 /* WBComposeTypeButton.swift */; };
+		45E991CB1E59379600C35023 /* WBComposeTypeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E991CA1E59379600C35023 /* WBComposeTypeButton.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,6 +184,8 @@
 		44EBDF1FBF380609FE40265F /* Pods-EasyWeibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyWeibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyWeibo/Pods-EasyWeibo.release.xcconfig"; sourceTree = "<group>"; };
 		452477C31E592A65003FDFED /* WBComposeTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBComposeTypeView.swift; sourceTree = "<group>"; };
 		452477C51E592E3E003FDFED /* WBComposeTypeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBComposeTypeView.xib; sourceTree = "<group>"; };
+		45E991C81E59374C00C35023 /* WBComposeTypeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBComposeTypeButton.swift; sourceTree = "<group>"; };
+		45E991CA1E59379600C35023 /* WBComposeTypeButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBComposeTypeButton.xib; sourceTree = "<group>"; };
 		58723FE9C8BF1832BABC6571 /* Pods-EasyWeibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyWeibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyWeibo/Pods-EasyWeibo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -534,6 +538,8 @@
 			children = (
 				452477C31E592A65003FDFED /* WBComposeTypeView.swift */,
 				452477C51E592E3E003FDFED /* WBComposeTypeView.xib */,
+				45E991C81E59374C00C35023 /* WBComposeTypeButton.swift */,
+				45E991CA1E59379600C35023 /* WBComposeTypeButton.xib */,
 			);
 			path = ComposeType;
 			sourceTree = "<group>";
@@ -667,6 +673,7 @@
 				452477C61E592E3E003FDFED /* WBComposeTypeView.xib in Resources */,
 				043989B01E35077E0014B81D /* WBStatusNormalCell.xib in Resources */,
 				0451D2A51E2E68CA0081D481 /* Assets.xcassets in Resources */,
+				45E991CB1E59379600C35023 /* WBComposeTypeButton.xib in Resources */,
 				042124001E389A9100F1A300 /* WBStatusRetweetedCell.xib in Resources */,
 				0451C04A1E3456050014BF0B /* WBNewFeatureView.xib in Resources */,
 				049FAC551E3389100095FB1D /* WBWelcomeView.xib in Resources */,
@@ -757,6 +764,7 @@
 				042124021E38A15600F1A300 /* WBSlideViewController.swift in Sources */,
 				049FAC511E3375910095FB1D /* WBWelcomeView.swift in Sources */,
 				04B50E851E311EFD006976E6 /* WBUniversal.swift in Sources */,
+				45E991C91E59374C00C35023 /* WBComposeTypeButton.swift in Sources */,
 				04F6E1C81E354425000B0AEA /* UIImage+WebImage.swift in Sources */,
 				049F17161E2A27B700120BF0 /* UIBarbuttonItem+Extension.swift in Sources */,
 				04DA9F041E28E90400371714 /* UIViewController+CZAddition.m in Sources */,

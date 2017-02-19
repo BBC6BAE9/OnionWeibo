@@ -45,4 +45,34 @@ class WBComposeTypeView: UIView {
         vc.view.addSubview(self)
         
     }
+    override func awakeFromNib() {
+        seupUI()
+    }
+    
+    /// 按钮点击监听方法
+    func clickButton(){
+    
+    print("点我......")
+    }
+}
+
+
+
+// MARK: - 让extension所有的函数都私有
+extension WBComposeTypeView{
+
+    func seupUI(){
+    
+        let btn = WBComposeTypeButton.composeTypeButton(imageName: "tabbar_compose_more", title: "have a try")
+        
+        btn.frame = CGRect(x: 100 , y: 100, width: 100, height: 100)
+        //添加监听方法
+        btn.addTarget(self, action: #selector(clickButton), for: .touchUpInside)
+        
+        addSubview(btn)
+        
+        
+    }
+
+
 }

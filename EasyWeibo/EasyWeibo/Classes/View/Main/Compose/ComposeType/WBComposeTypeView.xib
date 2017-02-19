@@ -30,6 +30,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VsH-Xc-e8I">
                                         <rect key="frame" x="148" y="10" width="25" height="25"/>
                                         <state key="normal" image="tabbar_compose_background_icon_close"/>
+                                        <connections>
+                                            <action selector="close:" destination="iN0-l3-epB" eventType="touchUpInside" id="6pL-bp-6n2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -68,6 +71,9 @@
                 <constraint firstItem="AWi-NU-rca" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="c1a-0z-Obe"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="scrollView" destination="AnM-FX-tyK" id="Ttv-7r-rKP"/>
+            </connections>
             <point key="canvasLocation" x="34.5" y="54.5"/>
         </view>
     </objects>

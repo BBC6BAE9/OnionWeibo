@@ -16,11 +16,11 @@ class WBComposeTypeView: UIView {
     
     
     // 定义按钮的数组
-    private let buttonInfo = [["imageName":"tabbar_compose_idea","title":"文字"],
+    let buttonInfo = [["imageName":"tabbar_compose_idea","title":"文字"],
                               ["imageName":"tabbar_compose_idea","title":"照片／视频"],["imageName":"tabbar_compose_idea","title":"长微博"],["imageName":"tabbar_compose_idea","title":"签到"],["imageName":"tabbar_compose_idea","title":"点评"],["imageName":"tabbar_compose_idea","title":"更多"],
                               
                               ["imageName":"tabbar_compose_idea","title":"好友圈"],["imageName":"tabbar_compose_idea","title":"微博相机"],["imageName":"tabbar_compose_idea","title":"音乐"],
-                              ["imageName":"tabbar_compose_idea","title":"拍摄"],
+                              ["imageName":"tabbar_compose_shooting","title":"拍摄"],
                                                             ]
     
     
@@ -91,14 +91,45 @@ extension WBComposeTypeView{
 //        
 //        addSubview(btn)
         
-        //强行更新布局，拿到scrollView按钮
+        //0.强行更新布局，拿到scrollView按钮
         layoutIfNeeded()
+        //1.向ScrollView添加视图
+        scrollView.backgroundColor = .orange
+        let rect = scrollView.bounds
+        let v = UIView(frame: rect)
         
-        //向视图添加按钮
-        let v = UIView()
+        //2.向视图添加按钮
+        addButton(v: scrollView, idx: 0)
+        
+        
+        //3.将视图添加到 scrollView
+        
+        addSubview(v)
+    }
+    
+    /// 向v中添加按钮，按钮的数组索引从idx开始
+    func addButton(v:UIView, idx: Int){
+        let count = 6
+        for i in idx..<(idx + count){
+        
+        //从数组字典中获取图像名称
+           let dict =  buttonInfo[i]
+            
+            if idx >= buttonInfo.count{
+            break
+            }
+            //因为这个地方的key可能会写错，所以guard一下
+            guard let imgName = dict["imageName"],
+                let title = dict["title"] else{
+            continue
+            }
+            
+            let btn = WBComposeTypeButton.composeTypeButton(imageName: imgName, title: title)
+        
+            v.addSubview(btn)
+        }
         
         
     }
-    
     
 }

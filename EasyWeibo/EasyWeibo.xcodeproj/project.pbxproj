@@ -184,6 +184,7 @@
 		44EBDF1FBF380609FE40265F /* Pods-EasyWeibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyWeibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyWeibo/Pods-EasyWeibo.release.xcconfig"; sourceTree = "<group>"; };
 		452477C31E592A65003FDFED /* WBComposeTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBComposeTypeView.swift; sourceTree = "<group>"; };
 		452477C51E592E3E003FDFED /* WBComposeTypeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBComposeTypeView.xib; sourceTree = "<group>"; };
+		458126A81E5A9BE30077A1C9 /* EasyWeibo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EasyWeibo.entitlements; sourceTree = "<group>"; };
 		45E991C81E59374C00C35023 /* WBComposeTypeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBComposeTypeButton.swift; sourceTree = "<group>"; };
 		45E991CA1E59379600C35023 /* WBComposeTypeButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBComposeTypeButton.xib; sourceTree = "<group>"; };
 		58723FE9C8BF1832BABC6571 /* Pods-EasyWeibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyWeibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyWeibo/Pods-EasyWeibo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -366,6 +367,7 @@
 		04DA9E981E28C26F00371714 /* EasyWeibo */ = {
 			isa = PBXGroup;
 			children = (
+				458126A81E5A9BE30077A1C9 /* EasyWeibo.entitlements */,
 				04DA9EC71E28C5B800371714 /* Classes */,
 				0451D2A41E2E68CA0081D481 /* Assets.xcassets */,
 				04DA9E991E28C26F00371714 /* AppDelegate.swift */,
@@ -626,6 +628,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = U3Z8K685BU;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					04DA9EA91E28C26F00371714 = {
 						CreatedOnToolsVersion = 8.0;

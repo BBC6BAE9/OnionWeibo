@@ -17,11 +17,11 @@ class WBComposeTypeView: UIView {
     
     // 定义按钮的数组
     let buttonInfo = [["imageName":"tabbar_compose_idea","title":"文字"],
-                              ["imageName":"tabbar_compose_idea","title":"照片／视频"],["imageName":"tabbar_compose_idea","title":"长微博"],["imageName":"tabbar_compose_idea","title":"签到"],["imageName":"tabbar_compose_idea","title":"点评"],["imageName":"tabbar_compose_idea","title":"更多"],
-                              
-                              ["imageName":"tabbar_compose_idea","title":"好友圈"],["imageName":"tabbar_compose_idea","title":"微博相机"],["imageName":"tabbar_compose_idea","title":"音乐"],
-                              ["imageName":"tabbar_compose_shooting","title":"拍摄"],
-                                                            ]
+                      ["imageName":"tabbar_compose_photo","title":"照片／视频"],["imageName":"tabbar_compose_weibo","title":"长微博"],["imageName":"tabbar_compose_lbs","title":"签到"],["imageName":"tabbar_compose_review","title":"点评"],["imageName":"tabbar_compose_more","title":"更多"],
+                      
+                      ["imageName":"tabbar_compose_friend","title":"好友圈"],["imageName":"tabbar_compose_wbcamera","title":"微博相机"],["imageName":"tabbar_compose_music","title":"音乐"],
+                      ["imageName":"tabbar_compose_shooting","title":"拍摄"],
+                      ]
     
     
     //有了XIB这个地方就不用留了
@@ -83,18 +83,17 @@ extension WBComposeTypeView{
     
     func seupUI(){
         
-//        let btn = WBComposeTypeButton.composeTypeButton(imageName: "tabbar_compose_more", title: "have a try")
-//        
-//        btn.frame = CGRect(x: 100 , y: 100, width: 100, height: 100)
-//        //添加监听方法
-//        btn.addTarget(self, action: #selector(clickButton), for: .touchUpInside)
-//        
-//        addSubview(btn)
+        //        let btn = WBComposeTypeButton.composeTypeButton(imageName: "tabbar_compose_more", title: "have a try")
+        //
+        //        btn.frame = CGRect(x: 100 , y: 100, width: 100, height: 100)
+        //        //添加监听方法
+        //        btn.addTarget(self, action: #selector(clickButton), for: .touchUpInside)
+        //
+        //        addSubview(btn)
         
         //0.强行更新布局，拿到scrollView按钮
         layoutIfNeeded()
         //1.向ScrollView添加视图
-        scrollView.backgroundColor = .orange
         let rect = scrollView.bounds
         let v = UIView(frame: rect)
         
@@ -111,25 +110,38 @@ extension WBComposeTypeView{
     func addButton(v:UIView, idx: Int){
         let count = 6
         for i in idx..<(idx + count){
-        
-        //从数组字典中获取图像名称
-           let dict =  buttonInfo[i]
+            
+            //从数组字典中获取图像名称
+            let dict =  buttonInfo[i]
             
             if idx >= buttonInfo.count{
-            break
+                break
             }
             //因为这个地方的key可能会写错，所以guard一下
             guard let imgName = dict["imageName"],
                 let title = dict["title"] else{
-            continue
+                    continue
             }
             
             let btn = WBComposeTypeButton.composeTypeButton(imageName: imgName, title: title)
-        
+            
             v.addSubview(btn)
         }
         
+        let btnSize = CGSize(width: 100, height: 100)
+        let margin = (v.bounds.width - 3 * btnSize.width) / 4
         
-    }
+        for (i, btn) in v.subviews.enumerated() {
+            
+//            let y: CGFloat = (i > 2) ? (v.bounds.height - btnSize.height) : 0
+            let y: CGFloat = 0
+            let col = i % 3
+            let x = CGFloat(col + 1) * margin + CGFloat(col) * btnSize.width
+            
+            btn.frame = CGRect(x: x, y: y, width: btnSize.width, height: btnSize.height)
+        }
+
+   }
+    
     
 }

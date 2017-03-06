@@ -11,7 +11,6 @@ import SVProgressHUD
 
 class WBOAuthViewController: UIViewController {
 
-    
     private lazy var webView = UIWebView()
     
     override func loadView() {

@@ -9,6 +9,7 @@
 import UIKit
 
 private let accountFile: NSString = "useraccount.json"
+
 class WBUserAccount: NSObject {
     
     /// 访问令牌
@@ -42,7 +43,6 @@ class WBUserAccount: NSObject {
     override init(){
         super.init()
         //1.从磁盘加载保存的文件
-        
         guard let path = accountFile.cz_appendDocumentDir(),
               let data = NSData(contentsOfFile: path),
               let dict = try? JSONSerialization.jsonObject(with: data as Data, options: [])as? [String: AnyObject]

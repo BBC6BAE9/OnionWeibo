@@ -13,6 +13,7 @@ class WBMessageViewController: WBBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+       
         //模拟token过期
 //        NetworkManager.shared.userAccount.access_token = "I am fake token"
     }

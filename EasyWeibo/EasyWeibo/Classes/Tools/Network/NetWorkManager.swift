@@ -51,7 +51,6 @@ class NetworkManager: AFHTTPSessionManager {
             // 发送通知，提示用户登录
             print("没有 token! 需要登录")
             
-            //FIXME - 我感觉逻辑上可能还会有问题，回头看看吧
             NotificationCenter.default.post(name:NSNotification.Name(rawValue: WBUserShouldLoginNotification),object:nil)
             completion(nil, false)
             
